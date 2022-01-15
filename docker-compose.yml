@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  rust:
+    container_name: rust_traning
+    build: .
+    tty: true
+    restart: always
+    volumes:
+      - .:/usr/src/myapp
